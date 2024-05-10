@@ -11,11 +11,11 @@ Parameters:
   ProjectName:
     Type: String
     Description: Project Name
-    Default: xxxxxx
+    Default: nobl9
   WebsiteBucket:
     Type: String
     Description: Website S3 bucket name
-    Default: xxxxxx.awsworkshop.io
+    Default: nobl9.awsworkshop.io
   CloudFrontDistroId:
     Type: String
     Description: CloudFront distribution ID
@@ -23,11 +23,11 @@ Parameters:
   GitHubRepo:
     Type: String
     Description: repo name
-    Default: aws-modernization-with-xxxxxx
+    Default: aws-modernization-with-nobl9
   FullRepoURL:
     Type: String
     Description: The full url to the repo
-    Default: https://github.com/aws-samples/aws-modernization-with-xxxxxx.git
+    Default: https://github.com/aws-samples/aws-modernization-with-nobl9.git
   GitHubOwner:
     Type: String
     Description: GitHub owner name
