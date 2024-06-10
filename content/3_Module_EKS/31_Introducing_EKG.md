@@ -1,7 +1,7 @@
 ---
 title: "Introducing EKG" # MODIFY THIS TITLE
 chapter: true
-weight: 2 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES IF APPLICABLE
+weight: 1 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES IF APPLICABLE
 ---
 
 ## Introducing EKG -- Essential Kubernetes Gauges
