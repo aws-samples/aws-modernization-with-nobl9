@@ -30,7 +30,7 @@ This site is built with Hugo, so you'll need it [installed](https://gohugo.io/ge
 First, clone this repo:
 
 ```bash
-git clone git@github.com:aws-samples/aws-modernization-with-stormforge.git
+git clone git@github.com:aws-samples/aws-modernization-with-nobl9.git
 ```
 
 Ensure you've also cloned the submodules:

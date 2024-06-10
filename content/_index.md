@@ -11,10 +11,10 @@ weight: 1
 
 ## Welcome
 
-Reliability of your offerings is non-negotiable to users, and too often is siloed to the various elements of your app and infrastructure. Achieving a customer-centric view of reliability - going beyond incident management and identifying day-to-day issues affecting the user experience - requires a holistic approach. Implementing Service Level Objectives (SLOs) and error budgeting allows you to monitor your application as a singular entity, prioritizing issues that affect the user and identifying the invisible mini-incidents that cause product abandonment and switching.
+Reliability of your offerings is non-negotiable to users, and too often is siloed to the various elements of your applications and infrastructure. Achieving a customer-centric view of reliability - going beyond incident management and identifying day-to-day issues affecting the user experience - requires a holistic approach. Implementing Service Level Objectives (SLOs) and error budgeting allows you to monitor your application as a singular entity, prioritizing issues that affect the user and identifying the invisible mini-incidents that cause product abandonment and switching.
 
 ### Learning Objectives
-In this workshop, we will walk you through how to set up AWS Observability for your application, and Service Level Objectives (SLOs) on your AWS infrastructure to provide a hands-on experience using AWS services and Nobl9’s SLO-based reliability platform to build reliability and observability into your AWS-hosted product.
+In this workshop, we will walk you through how to set up Service Level Objectives (SLOs) on your AWS infrastructure and applications to provide a hands-on experience using AWS services and Nobl9’s SLO-based reliability platform to build reliability and observability into your AWS-hosted product.
 
 ### Who should attend
 SREs, DevOps, Developers, Cloud and Migration Architects
@@ -22,9 +22,9 @@ SREs, DevOps, Developers, Cloud and Migration Architects
 ### Content
 * Introduction
 * Setup AWS Account and Nobl9
-* Setup AWS infrastructure and deploy sample application on EKS
+* Setup AWS infrastructure and deploy sample application
 * AWS Observability
-* What is SLO and why I should care
+* What is an SLO and why should I care
 * SLO setup with Nobl9
 * EKG - ready-to-install package for EKS users
 
