@@ -4,7 +4,9 @@ chapter: true
 weight: 2
 ---
 
-If you haven't done it yet, you can sign-up for Nobl9 Free Edition, a perpetual free tier: https://app.nobl9.com/signup/
+If you haven't done it yet, you can sign-up for Nobl9 Free Edition, a perpetual free tier: 
+* For AWS events: https://app.nobl9.com/signup/
+* If you are using your AWS account, you can do it via [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-re2g4pgv2uhc6?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
 
 ![Nobl9 Account Signup](/images/nobl9-signup.png)
 
