@@ -1,7 +1,7 @@
 ---
-title: "Locate Your ALB" # MODIFY THIS TITLE
+title: "Locate Your ALB" 
 chapter: true
-weight: 2 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES IF APPLICABLE
+weight: 2 
 ---
 
 ## Where to start with an ALB
@@ -22,15 +22,14 @@ Here is the PetAdoptions application architecture again. Let's focus on the ALB 
 ![Image diagram of PetAdoptions Application Architecture with the PetSite-FrontEnd ALB and TargetGroup highlighted](/images/PetAdoptions_architecture_ALB_TG.png)
 
 ### Quick Refresher on ALBs
-An Application Load Balancer is a Layer 7 load balancer that has rich functionalty to route traffic in various
+An Application Load Balancer is a Layer 7 load balancer that has rich functionality to route traffic in various
 configurations. The "front end" of the load balancer (facing the consumers of the services) is shared across multiple
 "back ends" accessing the services, which are called TargetGroups. In the PetAdoptions architecture we see that the ALB
 nearest the users is balancing traffic to the PetSite-FrontEnd service and also a separate PetAdoptionsHistory-API service. For now we want to focus
 just on the PetSite-FrontEnd service, or rather on its TargetGroup.
 
 ### Finding this TargetGroup in the AWS Console
-- Go to the Compute > EC2 section of the AWS Console
-- Click on TargetGroups on the left side under Load Balancing
+- Go to the Compute > EC2 section of the AWS Console, and click on [TargetGroups](https://us-east-2.console.aws.amazon.com/ec2/home?region=us-east-2#TargetGroups:search=:Servic-PetSi-;v=3;$case=tags:false%5C,client:false;$regex=tags:false%5C,client:false) on the left side under Load Balancing
 ![TargetGroups location in left sidebar](/images/TargetGroups.png)
 - We can recognize the TargetGroup we want from its name, which will start with `Servic-PetSi-`
 ![Example of a TargetGroup whose name starts with Service-PetSi-](/images/Servic-PetSi_TargetGroup.png)
