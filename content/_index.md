@@ -5,9 +5,7 @@ weight: 1
 ---
 
 # Enhancing Reliability on AWS with Service Level Objectives
-<br>
-![Partner Logo](/images/AWS_Logo.png)  <!-- ADD YOUR PARTNER LOGO HERE USING THE INSTRUCTIONS BELOW -->
-<br>
+![Nobl9](/images/nobl9_logo_2023_brand.svg) 
 
 ## Welcome
 
