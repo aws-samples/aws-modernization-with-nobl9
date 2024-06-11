@@ -29,7 +29,7 @@ In another tab, open the AWS Console and go to [IAM](https://console.aws.amazon.
 6. Click *Next*
 7. Attach the `CloudWatchReadOnlyAccess` permission for your account:
 ![Screenshots of creating a role](/images/iam-cloudwatch-readonly.png)
-8. Click *Next*, name the role (e.g. Nobl9-CloudWatch-Data-Source) and save the role.
+8. Click *Next*, name the role (e.g. `Nobl9-CloudWatch-Data-Source`) and save the role.
 9. Copy the ARN of the newly created role.
 
 ### Create the Nobl9 Data Source
