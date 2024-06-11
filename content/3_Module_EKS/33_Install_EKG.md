@@ -7,10 +7,18 @@ weight: 3 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES IF APPLICAB
 ## Install EKG
 
 ### Clone the EKG repo locally
+For this workshop, we'll use a specific branch that is preconfigured to run within the One Observability PetSite cluster.
 ```bash
-https://github.com/nobl9/ekg.git
+git clone https://github.com/nobl9/ekg.git
 cd ekg
+git checkout aws-workshop
 ```
+
+Next, we need to make sure that we are logged into the cluster, using the config name `PetSite`:
+```bash
+aws eks update-kubeconfig --name PetSite --region $AWS_REGION --alias PetSite
+```
+
 
 If you are working in Cloud9, you can navigate to Source Control panel on the left and click **Clone Repository** and enter above URL and select top directory as location:
 ![Cloud9 EKG Git Repo](/images/nobl9-select-ekg-repo.png)
