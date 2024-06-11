@@ -1,7 +1,7 @@
 ---
-title: "Locate Your Metric" # MODIFY THIS TITLE
+title: "Locate Your Metric"
 chapter: true
-weight: 2 # MODIFY THIS VALUE TO REFLECT THE ORDERING OF THE MODULES IF APPLICABLE
+weight: 2 
 ---
 
 ## Latency SLOs on ALBs
@@ -23,6 +23,6 @@ To navigate to the metric from the TargetGroup:
 - Locate the pane called Target Response Time
 - Click on the three dots action menu and select "View in metrics"
   ![TargetGroup Monitoring tab location](/images/TargetGroup_Metrics.png)
-- On the CloudWatch Metrics screen, click the pencil icon to open "Edit details"
+- On the CloudWatch Metrics screen, click the pencil icon to open **Edit details**
   ![Target Response Time - Edit details screenshot](/images/TargetGroup_Edit_details.png)
   These are the metric settings you can copy and paste into Nobl9. Leave this tab open while we set up the SLO.

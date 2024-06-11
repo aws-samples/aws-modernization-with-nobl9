@@ -1,0 +1,42 @@
+Description: This template creates a Cross-Account-Role that will grant Nobl9 permissions to your account
+Parameters:
+  TrustedAccount:
+    Type: String
+    Description: Account ID for Cross-Account-Role
+  ExternalId:
+    Type: String
+    Description: External ID for Cross-Account-Role
+Metadata: 
+  AWS::CloudFormation::Interface: 
+    ParameterGroups: 
+      -
+        Label: 
+          default: "Cross-Account Role Configuration.  *Do Not Modify*"
+        Parameters: 
+          - TrustedAccount
+          - ExternalId
+    ParameterLabels: 
+      TrustedAccount: 
+        default: "AWS Account ID to Grant Permission"
+      ExternalID:
+        default: "External ID"
+Resources:
+  # This is the cross account role that will be operated by the Partner Solution
+  CrossAccountRole:
+    # This role should have the scoped down permissions*********
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+        - Action: 'sts:AssumeRole'
+          Effect: Allow
+          Principal:
+            AWS: !Sub arn:aws:iam::${TrustedAccount}:root
+          Condition:
+            StringEquals:
+              sts:ExternalId: !Ref ExternalId
+          Sid: ''
+        Version: '2012-10-17'
+      Path: "/"
+      ManagedPolicyArns: ["arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"]
+      RoleName: "Nobl9-CloudWatch-Data-Source"
+    Type: 'AWS::IAM::Role'
